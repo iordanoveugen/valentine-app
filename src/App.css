@@ -85,3 +85,33 @@
   border: 2px solid #ff4d88;
   color: #ff4d88;
 }
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9ec4, #ffd6e7);
+  font-family: sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* inimioare plutitoare */
+.container::before {
+  content: "💖 💗 💕 💞 💓";
+  position: absolute;
+  font-size: 40px;
+  animation: floatHearts 10s linear infinite;
+  opacity: 0.25;
+}
+
+@keyframes floatHearts {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
+}
