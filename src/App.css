@@ -100,7 +100,7 @@
 
 /* inimioare plutitoare */
 .container::before {
-  content: "💖 💗 💕 💞 💓";
+  content: "💖 💗 💕 💝 💓";
   position: absolute;
   font-size: 40px;
   animation: floatHearts 10s linear infinite;
